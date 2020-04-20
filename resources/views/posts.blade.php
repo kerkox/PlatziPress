@@ -10,7 +10,7 @@
                             <h5 class="card-title">{{ $post->title }}</h5>
                             <p class="card-text">
                                 {{ $post->get_excerpt }}
-                                <a href="{{ router('post', $post) }}">Leer más</a>
+                                <a href="{{ route('post', $post) }}">Leer más</a>
                             </p>
                         </div>
                     </div>
