@@ -22,8 +22,8 @@ class CreatePostsTable extends Migration
 
             $table->string('image')->nullable();
 
-            $table->string('body');
-            $table->string('iframe')->nullable();
+            $table->text('body');
+            $table->text('iframe')->nullable();
 
             $table->timestamps();
 
