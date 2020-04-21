@@ -17,7 +17,7 @@ class PostController extends Controller
     {
         $posts = Post::latest()->get();
 
-        return view('posts.index', compact($posts));
+        return view('posts.index', compact('posts'));
     }
 
     /**
