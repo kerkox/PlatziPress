@@ -9,6 +9,11 @@ class Post extends Model
 {
     use Sluggable;
 
+    protected $fillable = [
+        'user_id', 'title', 'body', 'image', 'iframe'
+    ];
+
+
     public function sluggable()
     {
         return [
