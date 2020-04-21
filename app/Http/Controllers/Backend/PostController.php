@@ -15,7 +15,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::lastest()->get();
+
+        return view('posts.index', compact($posts));
     }
 
     /**
