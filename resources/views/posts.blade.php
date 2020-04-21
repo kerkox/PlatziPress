@@ -8,8 +8,8 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             @if ($post->image)
-                                <img src="{{ $post->get_image }}" alt="" class="car-img-top">
-                            @elseif ()
+                                <img src="{{ $post->get_image }}" alt="" class="card-img-top">
+                            @else
                                 {!! $post->iframe !!}
                             @endif
                             <h5 class="card-title">{{ $post->title }}</h5>
